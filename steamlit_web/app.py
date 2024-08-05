@@ -8,13 +8,13 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder, MultiLabelBinar
 with open('steamlit_web/Logistic_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
-with open('scaler3 (1).pkl', 'rb') as f:
+with open('ssteamlit_web/scaler3 (1).pkl', 'rb') as f:
     scaler = pickle.load(f)
 
-with open('symptom4.pkl', 'rb') as f:
+with open('steamlit_web/symptom4.pkl', 'rb') as f:
     symptom_list = pickle.load(f)    
 
-with open('Gencoder.pkl', 'rb') as f:
+with open('steamlit_web/Gencoder.pk', 'rb') as f:
     encoder = pickle.load(f)    
 
 
