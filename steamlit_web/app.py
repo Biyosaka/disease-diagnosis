@@ -188,18 +188,18 @@ with col1:
             if symptom_check == True:
                  top_3_classes, top_3_probabilities = get_predict()
             with col2:
-                st.markdown(f"<p class="result" style="color:#000000; padding:14px 0 0 0">ຜົນການບົ່ງມະຕິພະຍາດ:</p>", unsafe_allow_html=True)
+                st.markdown(f'<p class="result" style="color:#000000; padding:14px 0 0 0">ຜົນການບົ່ງມະຕິພະຍາດ:</p>', unsafe_allow_html=True)
                 st.write('<p class="warning">ໝາຍເຫດ: !ຜົນການບົ່ງມະຕິພະຍາດນີ້ ເປັນພຽງຜົນບົ່ງມະຕິເບື້ອງຕົ້ນເທົ່ານັ້ນ!</p>', unsafe_allow_html=True)
 
-                st.write(f"<p class="result">{get_info(0).get('disease name')} <span class="tab-space"></span>ດ້ວຍຄ່າ Probability: {top_3_probabilities[0]*100:.2f}%</p>", unsafe_allow_html=True)
-                st.write(f"<p class="result2" style="color: #0080FF">{get_info(1).get("disease name")} &nbsp;&nbsp;&nbsp;&nbsp;ດ້ວຍຄ່າ Probability: {top_3_probabilities[1]*100:.2f}%</p>", unsafe_allow_html=True)
-                st.write(f"<p class="result2" style="color: #66B2FF">{get_info(2).get("disease name")} &nbsp;&nbsp;&nbsp;&nbsp;ດ້ວຍຄ່າ Probability: {top_3_probabilities[2]*100:.2f}%</p>", unsafe_allow_html=True)
+                st.write(f'<p class="result">{get_info(0).get('disease name')} <span class="tab-space"></span>ດ້ວຍຄ່າ Probability: {top_3_probabilities[0]*100:.2f}%</p>', unsafe_allow_html=True)
+                st.write(f'<p class="result2" style="color: #0080FF">{get_info(1).get("disease name")} &nbsp;&nbsp;&nbsp;&nbsp;ດ້ວຍຄ່າ Probability: {top_3_probabilities[1]*100:.2f}%</p>', unsafe_allow_html=True)
+                st.write(f'<p class="result2" style="color: #66B2FF">{get_info(2).get("disease name")} &nbsp;&nbsp;&nbsp;&nbsp;ດ້ວຍຄ່າ Probability: {top_3_probabilities[2]*100:.2f}%</p>', unsafe_allow_html=True)
                 
     
-                st.write(f"<p class="detail">ຂໍ້ມູນຂອງພະຍາດ: {get_info(0).get('disease name')}</p>", unsafe_allow_html=True)
-                st.write(f"<p class="result2">{get_info(0).get('Description', 'No description available')}</p>", unsafe_allow_html=True)
+                st.write(f'<p class="detail">ຂໍ້ມູນຂອງພະຍາດ: {get_info(0).get('disease name')}</p>', unsafe_allow_html=True)
+                st.write(f'<p class="result2">{get_info(0).get('Description', 'No description available')}</p>', unsafe_allow_html=True)
 
                 st.write('<p class="detail">ການຮັກສາເບື້ອງຕົ້ນ:</p>', unsafe_allow_html=True)
-                st.write(f"<p class="result2">{get_info(0).get('Treatmenting', 'No treatment information available')}<h4>", unsafe_allow_html=True)
+                st.write(f'<p class="result2">{get_info(0).get('Treatmenting', 'No treatment information available')}<h4>', unsafe_allow_html=True)
 
 
