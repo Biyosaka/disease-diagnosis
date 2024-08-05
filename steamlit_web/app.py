@@ -200,6 +200,6 @@ with col1:
                 st.write(f"<p class="result2">{get_info(0).get('Description', 'No description available')}</p>", unsafe_allow_html=True)
 
                 st.write('<p class="detail">ການຮັກສາເບື້ອງຕົ້ນ:</p>', unsafe_allow_html=True)
-                st.write(f"<p class="result2"">{get_info(0).get('Treatmenting', 'No treatment information available')}<h4>", unsafe_allow_html=True)
+                st.write(f"<p class="result2">{get_info(0).get('Treatmenting', 'No treatment information available')}<h4>", unsafe_allow_html=True)
 
 
