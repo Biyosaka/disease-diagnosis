@@ -14,7 +14,7 @@ with open('steamlit_web/scaler.pkl', 'rb') as f:
 with open('steamlit_web/symptom4.pkl', 'rb') as f:
     symptom_list = pickle.load(f)    
 
-with open('steamlit_web/Gencoder.pk', 'rb') as f:
+with open('steamlit_web/Gencoder.pkl', 'rb') as f:
     encoder = pickle.load(f)    
 
 
