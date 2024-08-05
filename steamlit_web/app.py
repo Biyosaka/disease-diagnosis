@@ -148,7 +148,7 @@ st.markdown("""
 # Streamlit app()
 buf1, col4 = st.columns([1, 5])
 with col4:
-    st.image("FSN_Header.png", width=130)
+    st.image("steamlit_web/FSN_Header.png", width=130)
 
 buf2, col3 = st.columns([1.4, 3])
 with col3:
