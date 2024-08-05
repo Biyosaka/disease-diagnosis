@@ -5,7 +5,7 @@ import pandas as pd
 import pickle
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, MultiLabelBinarizer
 
-with open('Logistic2 (3).pkl', 'rb') as f:
+with open('Logistic_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 with open('scaler3 (1).pkl', 'rb') as f:
