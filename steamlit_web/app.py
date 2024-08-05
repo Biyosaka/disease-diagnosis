@@ -18,7 +18,7 @@ with open('steamlit_web/Gencoder.pkl', 'rb') as f:
     encoder = pickle.load(f)    
 
 
-symptom_name = pd.read_csv('Symptom_names.csv')
+symptom_name = pd.read_csv('steamlit_web/Symptom_names.csv')
 
 def preprocess_inputs(gender, age, weight, blood_pressure, temperature, symptoms):
     input_data = pd.DataFrame({
@@ -55,7 +55,7 @@ def get_predict():
 
 def get_info(n):
     global info_list
-    disease_info = pd.read_csv('disease_info.csv')
+    disease_info = pd.read_csv('steamlit_web/disease_info.csv')
 
     disease_info_dict = disease_info.set_index('disease').T.to_dict()
     predicted_disease = top_3_classes[n]
