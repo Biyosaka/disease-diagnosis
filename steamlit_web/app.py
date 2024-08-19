@@ -152,7 +152,7 @@ with col4:
 
 buf2, col3 = st.columns([1.4, 3])
 with col3:
-    st.markdown("<h1 style='margin-bottom: 20px;padding:0 0 20px 0'>Disease prediction based on symptoms</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='margin-bottom: 20px;padding:0 0 20px 0'>Disease diagnosis based on symptoms</h1>", unsafe_allow_html=True)
 
 
 
